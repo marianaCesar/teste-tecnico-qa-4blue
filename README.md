@@ -15,7 +15,14 @@ Identificar bugs funcionais, inconsistências de experiência e possíveis falha
 evidencias → vídeos e prints dos bugs  
 automacao → testes automatizados
 
-## Bugs prioritários <br>
+## Total de bugs encontrados: 14 <br>
+
+Críticos: 2 <br> 
+Altos: 2 <br>
+Médios: 2 <br>
+Baixos: 8 
+
+## Bugs prioritários - Críticos <br>
 
 ### 1- Título: Login não valida campos obrigatórios <br>
 Severidade: Crítico<br>
