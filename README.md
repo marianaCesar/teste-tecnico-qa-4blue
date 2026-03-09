@@ -12,8 +12,9 @@ Identificar bugs funcionais, inconsistências de experiência e possíveis falha
 
 ## Estrutura do repositório
 
-evidencias → vídeos e prints dos bugs  
-automacao → testes automatizados
+Evidencias → vídeos e prints dos bugs  
+Automacao → Utilizado o Cypress para automação de Cadastro e Login com sucesso automatizados. <br>
+Obs.: Julgando que o bug após o "Login realizado com sucesso" não apresente a mensagem "Erro inesperado" (toast).
 
 ## Total de bugs encontrados: 14 <br>
 
@@ -24,31 +25,7 @@ Baixos: 8
 
 ## Bugs prioritários - Críticos <br>
 
-### 1- Título: Login não valida campos obrigatórios <br>
-Severidade: Crítico<br>
-Prioridade: Alta<br>
-
-Descrição: Validação de campos obrigatórios no Login<br>
-
-**Dado** que o usuário acessou a tela de “Login”<br>
-**Quando** o usuário deixa todos os campos vazios<br>
-**E** clica no botão “Entrar”<br>
-**Então** o sistema realiza o acesso mesmo com os campos vazios.<br>
-
-Resultado atual:<br>
-O sistema realiza o acesso mesmo com os campos vazios.<br>
-
-Resultado esperado:<br>
-O sistema deve impedir o acesso e exibir mensagem solicitando o preenchimento dos campos obrigatórios.<br>
-
-Evidência:<br>
-Vídeo demonstrando o comportamento.<br>
-
-### Motivo: <br>
-Este bug foi priorizado porque afeta diretamente o fluxo de autenticação do sistema. A ausência de validação permite que o usuário tente realizar acesso sem fornecer credenciais, o que pode indicar falha no controle básico de autenticação.
-
-
-### 2- Título: Sistema permite cadastro com campos obrigatórios vazios<br>
+### 1- Título: Sistema permite cadastro com campos obrigatórios vazios<br>
 Severidade: Crítico<br>
 Prioridade: Alta<br>
 
@@ -69,7 +46,30 @@ Evidência:<br>
 Print demonstrando o comportamento do console com os campos em vazio.<br>
 
 ### Motivo: <br>
-Este bug também foi priorizado por impactar diretamente a integridade dos dados do sistema. Permitir a criação de contas sem o preenchimento de informações essenciais pode gerar registros inválidos na base de dados, dificultando processos como autenticação, comunicação com usuários e manutenção das informações cadastrais.
+Este bug foi priorizado por impactar diretamente a integridade dos dados do sistema. Permitir a criação de contas sem o preenchimento de informações essenciais pode gerar registros inválidos na base de dados, dificultando processos como autenticação, comunicação com usuários e manutenção das informações cadastrais.
+
+### 2- Título: Login não valida campos obrigatórios <br>
+Severidade: Crítico<br>
+Prioridade: Alta<br>
+
+Descrição: Validação de campos obrigatórios no Login<br>
+
+Dado que o usuário acessou a tela de “Login”<br>
+Quando o usuário deixa todos os campos vazios<br>
+E clica no botão “Entrar”<br>
+Então o sistema realiza o acesso mesmo com os campos vazios.<br>
+
+Resultado atual:<br>
+O sistema realiza o acesso mesmo com os campos vazios.<br>
+
+Resultado esperado:<br>
+O sistema deve impedir o acesso e exibir mensagem solicitando o preenchimento dos campos obrigatórios.<br>
+
+Evidência:<br>
+Vídeo demonstrando o comportamento.<br>
+
+### Motivo: <br>
+Este bug foi priorizado porque afeta diretamente o fluxo de autenticação do sistema. A ausência de validação permite que o usuário tente realizar acesso sem fornecer credenciais, o que pode indicar falha no controle básico de autenticação.
 
 ---
 
